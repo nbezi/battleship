@@ -1,0 +1,21 @@
+.board-cell {
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid gray;
+	display: table-cell;
+	vertical-align: center;
+	padding-top: 0.5rem;
+}
+
+.board-cell.hittable {
+	cursor: pointer;
+}
+
+.board-cell.hitted {
+	color: white;
+	background-color: darkred;
+}
+
+.board-cell.hittable:hover {
+	background-color: pink;
+}
