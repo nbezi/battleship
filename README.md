@@ -4,6 +4,7 @@ To play the game please visit to:
 
 Player 1:
 http://ec2-52-90-29-224.compute-1.amazonaws.com:8081/game/1
+
 Player 2:
 http://ec2-52-90-29-224.compute-1.amazonaws.com:8081/game/2
 
