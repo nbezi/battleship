@@ -55,5 +55,5 @@ app.get('/restart', (req, res, next) => {
 
 app.use('/static', express.static(__dirname + '/views/static/'));
 
-app.listen(8087);
-winston.info('(Express+EJS): Battlership listening on port ' + 8087);
+app.listen(8081);
+winston.info('(Express+EJS): Battlership listening on port ' + 8081);
