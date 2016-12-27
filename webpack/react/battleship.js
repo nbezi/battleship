@@ -37,11 +37,16 @@ class Battleship extends React.Component {
 		return (
 			<div className={this.getClass()}>
 				<h1>{this.state.gameState}</h1>
-				<h2>Your Board</h2>
-				<BoardPlayer board={this.state.myBoard} />
-				<hr />
-				<h2>Your Enemy's board</h2>
-				<BoardPlayer enemy={true} board={this.state.enemyBoard} active={this.state.myTurn} />
+				<div className="boards-container">
+					<span className="board-box">
+						<h2>Your Board</h2>
+						<BoardPlayer board={this.state.myBoard} />
+					</span>
+					<span className="board-box">
+						<h2>Your Enemy's board</h2>
+						<BoardPlayer enemy={true} board={this.state.enemyBoard} active={this.state.myTurn} />
+					</span>
+				</div>
 				<hr />
 				<button onClick={this.restart.bind(this)}>Restart Game!</button>
 				<Moves moves={this.state.moves} />
