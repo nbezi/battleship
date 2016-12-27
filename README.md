@@ -18,4 +18,4 @@ I'm using the following stack:
 - Webpack
 - React + Babel for the front
 - jQuery for AJAX (for KISS)
-- Customer CSS file, to save time I didn't include any framework at this time.
+- Custom CSS file, to save time I didn't include any framework at this time.
