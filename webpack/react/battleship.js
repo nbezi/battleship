@@ -37,13 +37,22 @@ class Battleship extends React.Component {
 		return (
 			<div className={this.getClass()}>
 				<h1>{this.state.gameState}</h1>
+				<ul>
+					<li>C - Carrier</li>
+					<li>B - Battleship</li>
+					<li>R - Cruiser</li>
+					<li>S - Submarine</li>
+					<li>D - Destroyer</li>
+				</ul>
 				<div className="boards-container">
 					<span className="board-box">
 						<h2>Your Board</h2>
+						<p>Your ships are placed randomly</p>
 						<BoardPlayer board={this.state.myBoard} />
 					</span>
 					<span className="board-box">
 						<h2>Your Enemy's board</h2>
+						<p>{this.state.myTurn ? 'Click on a Square to Hit your opponent' : "Wait for your opponent's turn"}</p>
 						<BoardPlayer enemy={true} board={this.state.enemyBoard} active={this.state.myTurn} />
 					</span>
 				</div>

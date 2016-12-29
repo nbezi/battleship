@@ -46,6 +46,7 @@ class Cell extends React.Component {
 
 	fire() {
 		if (this.isHittable()) {
+			$('.hittable').removeClass('hittable');
 			$.ajax({
 				url: '/move', dataType: 'json', method: 'put', 
 				data: {row: this.props.rowNumber, column: this.props.columnNumber},
